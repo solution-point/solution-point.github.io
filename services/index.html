@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport - Solution Point</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/fotter.css">
+    <link rel="stylesheet" href="../css/service.css">
+</head>
+<body>
+    <!-- This is the Navigation bar -->
+    <header class="nonselect topnav">
+      <div class="navt">
+        <div class="logo">Solution Point</div>
+        <ul class="nav-links">
+          <l><a href="../#home">Home</a></l>
+          <l><a href="../#services">Services</a></l>
+          <l><a href="#ci">Contact-us</a></l>
+          <l><a href="../about-us.html">About-us</a></l>
+        </ul>
+        <div class="burger-menu" onclick="navrclick()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="navb">
+        <div class="l" onclick="navrclick(redirect('../#home'))"><a href="../#home">Home</a></div>
+        <div class="l" onclick="navrclick(redirect('../#services'))"><a href="../#services">Services</a></div>
+        <div class="l" onclick="navrclick(redirect('#ci'))"><a href="#ci">Contact-us</a></div>
+        <div class="l" onclick="navrclick(redirect('../about-us.html'))"><a href="../about-us.html">About-us</a></div>
+      </div>
+    </header>
+    <!-- End of Navigation bar -->
+
+    
+    <div class="req">
+      <div class="dtyp">
+        <div class="h"><h2>Passport</h2></div>
+        <img src="../images/test.jpg">
+      </div>
+      <div class="rdocs">
+        <div class="h"><h2>Required Documents</h2></div>
+        <ol>
+          <li>Aadhar Card</li>
+          <li>Voter ID</li>
+          <li>Pan Card</li>
+          <li>Bank Account</li>
+          <li>Resan Card</li>
+          <li>Passpost Size Photo</li>
+        </ol>
+      </div>
+    </div>
+    <div class="steps">
+      <h3>Steps</h3>
+      <ul>
+        <li>Visit our offline store Solution Point</li>
+        <li>Ask for Passport apply</li>
+        <li>Give nesecerry documents</li>
+        <li>Give the Fees</li>
+        <li>Done</li>
+      </ul>
+      <div class="fee"><p>Fees: $50 /-</p></div>
+    </div>
+    <div class="visits">
+      <button>Visit Our Store</button>
+    </div>
+    <!-- input section -->
+    
+
+    <!-- The is the fotter -->
+    <div class="bottom">
+      <div class="nonselect branding">
+        <img src="../icons/logo.png" alt="Solution Point" />
+        <p>Solution Point</p>
+      </div>
+      <hr />
+      <div class="ci" id="ci">
+        <h3 class="nonselect cih3">Contact Info</h3>
+        <p>
+          <i class="bx bxl-phone"></i
+          ><a href="tel:+911234567890">+91 1234567890</a>
+        </p>
+        <p>
+          <i class="bx bxl-mail"></i
+          ><a href="mailto:mailtosolutionpoint@gmail.com"
+            >mailtosolutionpoint@gmail.com</a
+          >
+        </p>
+        <p>
+          <i class="bx bxl-loaction"></i
+          ><a href=""> 123, ABC Road, XYZ City, State, Country</a>
+        </p>
+      </div>
+      <div class="nonselect social">
+        <h3>Follow us</h3>
+        <div class="slink"></div>
+      </div>
+      <div class="nonselect cr">
+        <p>&#169; Solution Point | All Right Reserved.</p>
+      </div>
+      <!-- It is the bottom of the home page -->
+    </div>
+    <!-- End of the footer -->
+</body>
+<script src="../js/functions.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/footer.js"></script>
+</html>
