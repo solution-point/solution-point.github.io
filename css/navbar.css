@@ -1,0 +1,101 @@
+@import url('universal.css');
+:root
+{
+     /* Nav bar */
+     --nav-color: rgb(51, 51, 51);
+     --nav-clor-hover: rgb(37, 37, 37);
+     --nav-height: 40px;
+     /* ------ */
+}
+/* Top Navigation bar start here */
+.topnav
+{
+    background-color: var(--nav-color);
+    color: white;
+}
+.topnav:hover
+{
+    background-color: var(--nav-clor-hover);
+}
+.navt
+{
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links l {
+    margin:0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger-menu {
+    display: none;
+    box-sizing: border-box;
+    padding: 5px;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: var(--input-radius);
+}
+.burger-menu:hover
+{
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin:3px 0;
+}
+.navb
+{
+    width: 100%;
+    height: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+}
+.l
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding:8px;
+    background: rgba(255, 255, 255, 0.205);
+    margin: 2px 0;
+}
+.l a
+{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.l:hover
+{
+    background: rgba(255, 255, 255, 0.371);
+}
+
+@media screen and (max-width: 700px)
+{
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+/* Top Navigation bar ends here */

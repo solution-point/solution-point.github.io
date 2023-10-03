@@ -1,0 +1,170 @@
+@import url('universal.css');
+:root
+{
+    --h-backround:rgb(27, 177, 142);
+    --button-backround:rgb(21, 146, 255);
+    --button-backtound-hover:rgb(15, 116, 203);
+}
+
+/* Image and Requred Documents  */
+.req
+{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.h
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.dtyp
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+.dtyp .h
+{
+    background: var(--h-backround);
+    color: white;
+}
+.dtyp .h h2
+{
+    text-align: center;
+    margin: 0;
+}
+.dtyp img
+{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.rdocs
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+.rdocs .h
+{
+    background: rgb(179, 245, 197);
+    color:rgb(246, 159, 29);
+}
+.rdocs .h h2
+{
+    text-align: center;
+    margin: 0;
+}
+.rdocs ol li
+{
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+.rdocs ol h2
+{
+    text-align: center;
+}
+/* ------------------ */
+
+
+/* Steps */
+.steps
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+.steps h3
+{
+    margin: 16px 0;
+    text-align: center;
+    font-size: 28px;
+}
+.steps ul li
+{
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 0 5px;
+    font-size: 17px;
+}
+.fee
+{
+    width: 100%;
+    box-sizing: border-box;
+    /* border-radius:var(--main-radius); */
+    padding: 5px 0;
+    background: var(--h-backround);
+}
+.fee p
+{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.visits
+{
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+.visits button
+{
+    max-width: 600px;
+    width: 80%;
+    margin:20px  auto;
+    font-size: 24px;
+    padding: 14px;
+    border-radius: var(--main-radius);
+    border: 0;
+    background: var(--button-backround);
+    color: white;
+    font-weight: bold;
+    font-family: var(--main-font-family);
+    box-shadow: 1px 3px 5px rgb(196, 196, 196);
+}
+.visits button:hover
+{
+    background: var(--button-backtound-hover);
+    margin: 15px auto 25px auto;
+    box-shadow: 1px 5px 6px rgb(127, 127, 127);
+}
+/* ---------- */
+
+/* RESPONSIVE */
+@media (min-width:700px)
+{
+    .visits button
+    {
+
+    }
+    .req
+    {
+        flex-direction: row;
+    }
+    .rdocs .h
+    {
+        background: rgb(152, 81, 238);
+        color:white;
+    }
+}
+@media (min-width:950px) {
+    .rdocs ol li
+    {
+        font-size: 20px;
+    }
+}
+@media (min-width:1200px) {
+    .rdocs ol li
+    {
+        font-size: 22px;
+    }
+}

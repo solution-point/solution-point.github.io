@@ -1,0 +1,208 @@
+@import url('universal.css');
+:root 
+{
+    /* Bottom */
+    --bottom-backround: rgb(8, 8, 8);
+    /* ----- */
+}
+
+
+
+/* Bottom page starts here */
+.bottom
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 0 5px 0;
+    background: var(--bottom-backround);
+}
+.bottom h3
+{
+    font-size: 23px;
+}
+.bottom img
+{
+    display: block;
+    margin: auto;
+    max-width: 80px;
+}
+.branding p
+{
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+.sub
+{
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 24px;
+    color: white;
+    text-align: center;
+}
+.sub input
+{
+    width: 90%;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    background: white;
+    margin:14px  auto;
+    padding: 10px;
+    font-size: var(--form-font-size);
+    font-family: var(--main-font-family);
+    border-radius: var(--input-radius);
+}
+.sub button
+{
+    width: 90%;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    margin:18px auto;
+    padding: 10px;
+    font-size: var(--form-font-size);
+    font-family: var(--main-font-family);
+    background:var(--submit-button-color);
+    border-radius: var(--input-radius);
+}
+.ci
+{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+.cih3
+{
+    margin-bottom: 34px;
+}
+.ci p
+{
+    text-align: center;
+    /* font-weight: bold; */
+    margin: 14px;
+    font-family: var(--form-font-family);
+}
+.ci p i
+{
+    font-size: 20px;
+    margin: 0;
+}
+.ci p a
+{
+    font-size: 16px;
+    margin: 2px;
+    text-decoration: none;
+    color: white;
+}
+.ci p a:hover
+{
+    color: lightseagreen;
+}
+.social
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.slink
+{
+    text-align: center;
+    width: auto;
+    margin:24px auto;
+    transition: all 0s;
+}
+.slink a
+{
+    text-decoration: none;
+    color: white;
+}
+.slink i
+{
+    font-size: 22px;
+    padding: 6px;
+    margin: 7px;
+    border-radius: 90px;
+    border: 2px solid white;
+}
+.slink .fb
+{
+    background: rgb(0, 128, 255);
+    border: 2px solid rgb(0, 128, 255);
+    /* background: white; */
+}
+.slink .yt
+{
+    background: rgb(209, 1, 1);
+    border: 2px solid rgb(209, 1, 1);
+    /* background: white; */
+}
+.slink .insta
+{
+    background:rgb(131, 58, 180);
+    border: 2px solid  rgb(131, 58, 180);
+    /* background: white; */
+}
+.slink .x
+{
+    background: rgb(0, 128, 255);
+    border: 2px solid rgb(0, 128, 255);
+    /* background: white; */
+}
+.cr
+{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0 0 0;
+}
+.dev
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    margin: 8px 0;
+
+}
+.dev a
+{
+    color: rgb(179, 147, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--form-font-family);
+}
+.dev a:hover
+{
+    color: lightseagreen;
+}
+.cr p
+{
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--form-font-family);
+    color: white;
+    margin: 4px 0;
+    /* font-weight: bold; */
+}
+hr
+{
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.185);
+    border: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    .bottom img
+    {
+        max-width: 120px;
+    }
+}
+
+/* Bottom page ends here */

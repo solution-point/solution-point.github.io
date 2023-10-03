@@ -1,0 +1,110 @@
+@import url('universal.css');
+:root
+{
+    --tracking-background:rgb(74, 93, 199);
+    --v-max-view:600px;
+    --button-background: rgb(216, 180, 0);
+    --button-background-hover: rgb(175, 146, 0);
+}
+.t
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.t .h
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px 0 5px 0;
+}
+.h h2
+{
+    text-align: center;
+    margin:0;
+    color: rgb(74, 74, 74);
+}
+.sts
+{
+    box-sizing: border-box;
+    padding:8px 0 16px 0;
+    max-width: 800px;
+    margin:24px  auto;
+    background:var(--tracking-background);
+    border-radius: var(--main-radius);
+}
+.sts h3
+{
+    background: rgba(252, 252, 252, 0.557);
+    text-align: center;
+    padding: 8px 0;
+    color: midnightblue;
+    font-weight: bold;
+}
+.sts ul
+{
+    margin: 0;
+}
+.sts ul li
+{
+    color: rgb(51, 194, 173);
+    margin:10px 0;
+    font-weight: bold;
+}
+.sts ul li span
+{
+    color: rgb(255, 223, 44);
+    margin:10px 0;
+}
+.sts h1
+{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.search
+{
+    box-sizing: border-box;
+    padding:10px  8px;
+    max-width: var(--v-max-view);
+    width: 90%;
+    margin:40px  auto;
+    border-radius: var(--main-radius);
+    background: var(--tracking-background);
+}
+.search form
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.search form input
+{
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: var(--input-radius);
+    border: 0;
+    font-family: var(--form-font-family);
+    outline: none;
+}
+.search form button
+{
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    border: 0;
+    background: var(--button-background);
+    color: white;
+    border-radius: var(--input-radius);
+    font-family: var(--main-font-family);
+    outline: none;
+}
+.search form button:hover
+{
+    background: var(--button-background-hover);
+}

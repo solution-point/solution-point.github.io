@@ -1,0 +1,418 @@
+@import url('universal.css');
+:root
+{ 
+    /* Services */
+    --service-background: rgb(0, 141, 255);
+    --service-background-hover: rgba(0, 140, 255, 0.899);
+    --service-radius:var(--main-radius);
+    /* ------- */
+    
+    
+    /* Contact Us */
+    --contact-us-background: rgb(16, 67, 112);
+    --contct-us-background-hover: rgb(8, 33, 83);
+    /* --------- */
+}
+
+
+/* Fetured secrtion starts here */
+.fetured
+{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.im
+{
+    width: 100%;
+    margin:0  auto;
+    box-sizing: border-box;
+}
+.im img
+{
+    width: 100%;
+    display: block;
+}
+.intro
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px;
+    
+}
+.intro p
+{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-family: var(--form-font-family);
+}
+#introimage
+{
+    transition: all 0.6s;
+}
+/* Fetured section ends here */
+
+
+
+
+/* Service page starts here */
+.s
+{
+    text-align: center;
+}
+.s h2
+{
+    padding: 32px 0 0 0;
+    font-size: 34px;
+}
+
+/* Service Catagories */
+.servietypes
+{
+    width: 90%;
+    max-width: 500px;
+    margin:40px auto 20px auto;
+    box-sizing: border-box;
+    padding: 10px 12px 20px 12px;
+    border-radius: var(--main-radius);
+    background: rgb(0, 141, 255);
+    box-shadow: 0px 6px 6px rgba(93, 93, 93, 0.208);
+}
+.servietypes h3
+{
+    color: white;
+    margin: 16px 0;
+}
+.servietypes .typ
+{
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 8px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.686);
+    border-radius: var(--input-radius);
+}
+.servietypes .typ:hover
+{
+    background: rgb(223, 223, 223);
+}
+.servietypes .typ a
+{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(35, 35, 35, 0.719);
+}
+.servietypes .typ a:hover
+{
+    color: rgb(12, 159, 222);
+}
+/* ------------- */
+
+.services
+{
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--main-color);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.services .stypeh
+{
+    font-size: 24px;
+    padding: 40px 0 10px 0;
+}
+.hglgh
+{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(5, 4, 26);
+    background: rgb(233, 190, 82);
+    font-weight: bold;
+}
+.services h2
+{
+    padding: 10px 0;
+    margin: 8px 0;
+}
+.service
+{
+    background: var(--service-background);
+    border-radius: var(--service-radius);
+    box-sizing: border-box;
+    max-width: 360px;
+    margin:24px auto 24px auto;
+    padding: 16px;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(93, 93, 93, 0.208);
+}
+.service:hover
+{
+    background: var(--service-background-hover);
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.248);
+    margin:18px auto 30px auto;
+}
+.service h3
+{
+    margin: 14px 0 2px 0;
+}
+.service p
+{
+    margin: 5px 0 1px 0;
+    color: rgba(255, 255, 255, 0.817);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.service img
+{
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: var(--main-radius);
+}
+.service img:hover
+{
+    transform: scale(1.04);
+}
+/* Service page ends here */
+
+
+/* Track page starts here */
+.track
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.track h2
+{
+    text-align: center;
+}
+.track-f
+{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 18px;
+    margin: 10px auto;
+    background: var(--contact-us-background);
+    border-radius: var(--main-radius);
+}
+.track-f:hover
+{
+    background: var(--contct-us-background-hover);
+}
+.track-f form
+{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: var(--form-font-size);
+}
+.track-f form input[type=text]
+{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: var(--input-radius);
+    font-family: var(--form-font-family);
+    font-size: var(--form-font-size);
+    background: var(--input-backround);
+}
+.track-f form input[type=text]:focus
+{
+    border: 1px solid var(--submit-button-color);
+    background: var(--input-backround-hover);
+}
+.track-f form input[type=submit]
+{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: var(--input-radius);
+    font-family: var(--form-font-family);
+    font-size: var(--form-font-size);
+    background: var(--submit-button-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.track-f form input[type=submit]:hover
+{
+    background: var(--submit-button-color-hover);
+}
+/* Track page ends here */
+
+
+/* Contact Us starts here */
+.contact-us
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.contact-us h2
+{
+    text-align: center;
+}
+.contact-f
+{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 24px;
+    margin: 10px auto;
+    background: var(--contact-us-background);
+    border-radius: var(--main-radius);
+}
+.contact-f:hover
+{
+    box-sizing: border-box;
+    background: var(--contct-us-background-hover);
+}
+.contact-f input[type=text], .contact-f input[type=email], .contact-f textarea
+{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 14px 12px;
+    margin: 14px 0;
+    font-size: var(--form-font-size);
+    border-radius: var(--input-radius);
+    font-family: var(--form-font-family);
+    background: var(--input-backround);
+}
+.contact-f textarea
+{
+    height: 140px;
+}
+.contact-f input[type=submit]
+{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    background: var(--submit-button-color);
+    font-size: var(--form-font-size);
+    border-radius: var(--input-radius);
+    font-family: var(--main-font-family);
+}
+.contact-f input[type=submit]:hover
+{
+    background: var(--submit-button-color-hover);
+}
+/* Contact us ends here */
+
+
+
+
+
+
+/* -------RESPONSIVE------- */
+
+/* This is for smartphone  */
+@media screen and (max-width: 420px) {
+    .stype
+    {
+        display: grid;
+        place-items: center;
+    }
+    .service
+    {
+        max-width: 320px;
+    }
+}
+/* ---------------------- */
+
+
+/* This are for desktop */
+@media screen and ( min-width: 421px)
+{
+    .track-f
+    {
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .contact-f
+    {
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:700px){
+    .im
+    {
+        max-width: 700px;
+    }
+}
+
+/* This is for services */
+@media screen and ( min-width: 700px) {
+    .stype
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .services .stypeh
+    {
+        font-size: 28px;
+        margin: 40px 0;
+    }
+    .service
+    {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .stype
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .services .stypeh
+    {
+        font-size: 32px;
+        margin: 46px 0;
+    }
+}
+/* ------------------- */
+
+
+@media screen and (min-width: 1000px) {
+    .fetured
+    {
+        flex-direction: row;
+    }
+    .intro
+    {
+        width: 50%;
+    }
+}
+@media  screen and (min-width:1400px) {
+    .intro
+    {
+        width: 60%;
+    }
+}
+/* ------------------ */
