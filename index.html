@@ -1,1 +1,325 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Here will be some tags for SEO -->
+    <title>Solution Point</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="icons/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/fotter.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+  </head>
+  <body>
+    <!-- This is the Navigation bar -->
+    <header class="nonselect topnav">
+      <div class="navt">
+        <div class="logo">Solution Point</div>
+        <ul class="nav-links">
+          <l><a href=".#home">Home</a></l>
+          <l><a href=".#services">Services</a></l>
+          <l><a href="#ci">Contact-us</a></l>
+          <l><a href="about-us.html">About-us</a></l>
+        </ul>
+        <div class="burger-menu" onclick="navrclick()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="navb">
+        <div class="l" onclick="navrclick(redirect('.#home'))">
+          <a href=".#home">Home</a>
+        </div>
+        <div class="l" onclick="navrclick(redirect('.#services'))">
+          <a href=".#services">Services</a>
+        </div>
+        <div class="l" onclick="navrclick(redirect('#ci'))">
+          <a href="#ci">Contact-us</a>
+        </div>
+        <div class="l" onclick="navrclick(redirect('about-us.html'))">
+          <a href="about-us.html">About-us</a>
+        </div>
+      </div>
+    </header>
+    <!-- End of Navigation bar -->
+
+    <!-- This are the fetured area -->
+    <div class="nonselect fetured" id="home">
+      <div class="im"><img src="images/inimg2.jpg" id="introimage"/></div>
+      <div class="intro">
+        <h1>Solution Point</h1>
+        <h3>Single Destination, Every Solution</h3>
+        <p>Welcome to Solution Point, a Consulting Firm that helps businesses
+          like yours achieve unique goals. Our expert professionals will partner
+          with your business to deliver tailor-made practical solutions, we’ve
+          supported numerous clients - and we’re confident we’re the right
+          Consulting Firm for you.
+        </p>
+      </div>
+    </div>
+    <!-- End of the fetured area -->
+
+    <!-- This are the services area -->
+    <div class="nonselect s" id="services">
+      <h2>Our Services</h2>
+      <div class="servietypes">
+        <h3>Service Catagories</h3>
+        <div class="typ" onclick="redirect('#idf')"><a href="#idf">Identity Document Facilitator</a></div>
+        <div class="typ" onclick="redirect('#bdf')"><a href="#bdf">Business Documentation Facilitator</a></div>
+        <div class="typ" onclick="redirect('#trs')"><a href="#trs">Tax Related Services</a></div>
+        <div class="typ" onclick="redirect('#rera')"><a href="#rera">RERA</a></div>
+        <div class="typ" onclick="redirect('#la')"><a href="#la">Legal Affairs</a></div>
+        <div class="typ" onclick="redirect('#iim')"><a href="#iim">Investment and Insurance Management</a></div>
+        <!-- <div class="typ" onclick="redirect('#os')"><a href="#os">Other Services</a></div> -->
+      </div>
+      <div class="services">
+        <h3 class="stypeh" id="idf">Identity Document Facilitator</h3>
+        <div class="stype">
+          <div class="service" onclick="redirect('services/aadhaar_card.html')">
+            <img src="images/aadhaar card.jpg" />
+            <h3>Aadhaar Card</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/pan_card.html')">
+            <img src="images/pan card.jpg" />
+            <h3>PAN Card</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/voter_card.html')">
+            <img src="images/voter card.jpg" />
+            <h3>Voter Card</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/rastion_card.html')">
+            <img src="images/rastion card.jpg" />
+            <h3>Rastion Card</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/passport.html')">
+            <img src="images/passport.jpg" />
+            <h3>Passport</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/driving_license.html')">
+            <img src="images/driving license.jpg" />
+            <h3>Driving License</h3>
+            <p>Learn more</p>
+          </div>
+        </div>
+
+        <h3 class="stypeh" id="bdf">Business Documentation Facilitator</h3>
+        <div class="stype">
+          <div class="service" onclick="redirect('services/trade_license.html')">
+            <img src="images/trade license.jpg" />
+            <h3>Trade License</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/food_license.html')">
+            <img src="images/food license.jpg" />
+            <h3>Food License</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/fire_license.html')">
+            <img src="images/fire license.jpg" />
+            <h3>Fire License</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/pollution_license.html')">
+            <img src="images/pollution license.jpg" />
+            <h3>Pollution License</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/psara_license.html')">
+            <img src="images/psara license.jpg" />
+            <h3>PSARA License</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/iso_certificate.html')">
+            <img src="images/iso certificate.jpg" />
+            <h3>ISO Certificate</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/trade_mark.html')">
+            <img src="images/trade mark.jpg" />
+            <h3>Patent and Trade Mark</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/msme_registration.html')">
+            <img src="images/msme registration.jpg" />
+            <h3>MSME</h3>
+            <p>Learn more</p>
+          </div>
+        </div>
+        <h3 class="stypeh" id="trs">Tax Related Services</h3>
+        <div class="stype">
+          <div class="service" onclick="redirect('services/itr_filling.html')">
+            <img src="images/itr filling.jpg" />
+            <h3>ITR Filling</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/tds_filling.html')">
+            <img src="images/tds filling.jpg" />
+            <h3>TDS Filling</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/gst_registration.html')">
+            <img src="images/gst registration.jpg" />
+            <h3>GST Registration & Filling</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/auditing.html')">
+            <img src="images/auditing.jpg" />
+            <h3>Auditing</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/project_making.html')">
+            <img src="images/project making.jpg" />
+            <h3>Project Making</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/pf.html')">
+            <img src="images/pf.jpg" />
+            <h3>PF and ESI</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/import.html')">
+            <img src="images/import.jpg" />
+            <h3>Import and Export</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/llp_registration.html')">
+            <img src="images/llp registration.jpg" />
+            <h3>LLP Registration</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/company_registration.html')">
+            <img src="images/company registration.jpg" />
+            <h3>Company Registration</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/club_registration.html')">
+            <img src="images/club registration.jpg" />
+            <h3>Club/Society/NGO Registration</h3>
+            <p>Learn more</p>
+          </div>
+        </div>
+        <!-- <h2 class="hglgh" id="WBRERA">WB RERA</h2> -->
+        <h3 class="stypeh" id="rera">RERA</h3>
+        <div class="service" onclick="redirect('services/wb_rera.html')">
+          <img src="images/wb rera.jpg" />
+          <h3>WB RERA</h3>
+          <p>Learn more</p>
+        </div>
+        <h3 class="stypeh" id="la">Legal Affairs</h3>
+        <div class="stype">
+          <div class="service" onclick="redirect('services/legal_documents.html')">
+            <img src="images/legal documents.jpg" />
+            <h3>Preparation of Legal Documents</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/deed_making.html')">
+            <img src="images/deed making.jpg" />
+            <h3>Deed Making</h3>
+            <p>Learn more</p>
+          </div>
+          <!-- <div class="service" onclick="redirect('services/legal_registration.html')">
+            <img src="images/legal registration.jpg" />
+            <h3>Legal Registration</h3>
+            <p>Learn more</p>
+          </div> -->
+          <div class="service" onclick="redirect('services/succession_certificate.html')">
+            <img src="images/succession certificate.jpg" />
+            <h3>Succession Certificate</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/first_class_affidavit.html')">
+            <img src="images/first class affidavit.jpg" />
+            <h3>First Class Affidavit</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/notarized.html')">
+            <img src="images/notarized.jpg" />
+            <h3>Notarized Affidavit</h3>
+            <p>Learn more</p>
+          </div>
+        </div>
+
+        <h3 class="stypeh" id="iim">Investment and Insurance Management</h3>
+        <div class="stype">
+          <div class="service" onclick="redirect('services/insurance.html')">
+            <img src="images/insurance.jpg" />
+            <h3>Insurance (Motor, Health, Life, General )</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/fixed_deposit.html')">
+            <img src="images/fixed deposit.jpg" />
+            <h3>Fixed Deposits and Bonds</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/mutual_funds.html')">
+            <img src="images/mutual funds.jpg" />
+            <h3>Mutual Funds</h3>
+            <p>Learn more</p>
+          </div>
+        </div>
+        <!-- <h3 class="stypeh" id="os">Other Services</h3>
+        <div class="stype">
+          <div class="service" onclick="redirect('services/cost_certificate.html')">
+            <img src="images/cost certificate.jpg" />
+            <h3>Cost Certificate</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/birth_certificate.html')">
+            <img src="images/birth certificate.jpg" />
+            <h3>Birth Certificate</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/blro_mutation.html')">
+            <img src="images/blro mutation.jpg" />
+            <h3>BLRO Mutation and Khajna Payment</h3>
+            <p>Learn more</p>
+          </div>
+          <div class="service" onclick="redirect('services/tax_payment.html')">
+            <img src="images/tax payment.jpg" />
+            <h3>Municipal Mutaion and Tax Payment</h3>
+            <p>Learn more</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- End of the services area -->
+
+    <!-- The is the fotter -->
+    <div class="bottom">
+      
+      <div class="nonselect branding">
+        <img src="icons/logo.png" alt="Solution Point" />
+        <p>Solution Point</p>
+      </div>
+      <hr />
+      <div class="ci" id="ci">
+        <h3 class="nonselect cih3">Contact Info</h3>
+        <p><i class="bx bxs-gps"></i> <a href="https://maps.app.goo.gl/vjA8T4ZrAyRfyVuE8">2, Sitalatala St, Beehive Garden, Belghoria, Kolkata - 700056</a></p>
+        <p><i class="bx bxs-phone"></i> <a href="tel:+916291503844">+91 6291503844</a></p>
+        <p><i class="bx bxs-envelope"></i> <a href="mailto:mailtosolutionpoint@gmail.com">mailtosolutionpoint@gmail.com</a></p>
+      </div>
+      <div class="blank">
+        <p class="dev">Developed by <!--<a
+        href="https://arnabdebnath.000webhostapp.com">Arnab Debnath</a> & --><a
+        href="https://www.youtube.com/@srlearning4256">SR Learning</a></p>
+      </div>
+      <div class="nonselect cr">
+        <p>&#169; Solution Point | All Right Reserved.</p>
+      </div>
+      <!-- It is the bottom of the home page -->
+    </div>
+    <!-- End of the footer -->
+  </body>
+  <script src="js/functions.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/footer.js"></script>
+</html>

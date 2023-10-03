@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Track</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/universal.css" />
+    <link rel="stylesheet" href="css/track.css" />
+  </head>
+  <body>
+    <!-- This is the Navigation bar -->
+    <header class="nonselect topnav">
+      <div class="navt">
+        <div class="logo">Solution Point</div>
+        <ul class="nav-links">
+          <l><a href="#home">Home</a></l>
+          <l><a href="#services">Services</a></l>
+          <l><a href="#track">Track</a></l>
+          <l><a href="#contact">Contact</a></l>
+        </ul>
+        <div class="burger-menu" onclick="navrclick()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="navb">
+        <div class="l" onclick="navrclick(redirect('#home'))">
+          <a href="#home">Home</a>
+        </div>
+        <div class="l" onclick="navrclick(redirect('#services'))">
+          <a href="#services">Services</a>
+        </div>
+        <div class="l" onclick="navrclick(redirect('#track'))">
+          <a href="#track">Track</a>
+        </div>
+        <div class="l" onclick="navrclick(redirect('#contact'))">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- End of Navigation bar -->
+
+    <div class="t">
+      <div class="h"><h2>Application Tracking</h2></div>
+      <div class="sts" style="display: block;">
+        <h3 style="display: block;">ID: D45KLX45</h3>
+        <ul style="display: block;">
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+          <li>21:23 12/08/23-> <span>Application Submitted</span></li>
+        </ul>
+        <h1 style="display: block;">Invalid ID</h1>
+      </div>
+      <div class="search" style="display: block;">
+        <form action="" method="get">
+          <input type="text" name="t" placeholder="Application id" required />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- The is the fotter -->
+    <div class="bottom">
+      <div class="nonselect branding">
+        <img src="icons/logo.png" alt="Solution Point" />
+        <p>Solution Point</p>
+      </div>
+      <hr />
+      <div class="ci">
+        <h3 class="nonselect cih3">Contact Info</h3>
+        <p>
+          <i class="bx bxl-phone"></i
+          ><a href="tel:+911234567890">+91 1234567890</a>
+        </p>
+        <p>
+          <i class="bx bxl-mail"></i
+          ><a href="mailto:mailtosolutionpoint@gmail.com"
+            >mailtosolutionpoint@gmail.com</a
+          >
+        </p>
+        <p>
+          <i class="bx bxl-loaction"></i
+          ><a href=""> 123, ABC Road, XYZ City, State, Country</a>
+        </p>
+      </div>
+      <div class="nonselect social">
+        <h3>Follow us</h3>
+        <div class="slink"></div>
+      </div>
+      <div class="nonselect cr">
+        <p>&#169; Solution Point | All Right Reserved.</p>
+      </div>
+      <!-- It is the bottom of the home page -->
+    </div>
+    <!-- End of the footer -->
+  </body>
+  <script src="js/functions.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+</html>

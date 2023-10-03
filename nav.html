@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/universal.css" />
+</head>
+<body>
+    <!-- This is the Navigation bar -->
+    <header class="nonselect topnav">
+        <div class="navt">
+          <div class="logo">Solution Point</div>
+          <ul class="nav-links">
+            <l><a href=".#home">Home</a></l>
+            <l><a href=".#services">Services</a></l>
+            <l><a href=".#track">Track</a></l>
+            <l><a href=".#contact">Contact</a></l>
+          </ul>
+          <div class="burger-menu" onclick="navrclick()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="navb">
+          <div class="l" onclick="navrclick(redirect('#home'))">
+            <a href=".#home">Home</a>
+          </div>
+          <div class="l" onclick="navrclick(redirect('#services'))">
+            <a href=".#services">Services</a>
+          </div>
+          <div class="l" onclick="navrclick(redirect('#track'))">
+            <a href=".#track">Track</a>
+          </div>
+          <div class="l" onclick="navrclick(redirect('#contact'))">
+            <a href=".#contact">Contact</a>
+          </div>
+        </div>
+      </header>
+      <!-- End of Navigation bar -->
+</body>
+<script src="js/functions.js"></script>
+<script src="js/navbar.js"></script>
+</html>
