@@ -32,6 +32,7 @@
 .im img
 {
     width: 100%;
+    background: cornsilk;
     display: block;
 }
 .intro
@@ -321,6 +322,31 @@
 /* Contact us ends here */
 
 
+.btn
+{
+    width: 80%;
+    max-width: 500px;
+    margin:20px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn button
+{
+    width: 100%;
+    border-radius: var(--service-radius);
+    background: rgb(48, 171, 142);
+    box-shadow: 0 1px 2px grey;
+    border: 0px;
+    font-size: 20px;
+    padding: 17px;
+    color: white;
+}
+.btn button:hover
+{
+    box-shadow: 0 2px 5px grey;
+    background: var(--service-background-hover);
+}
 
 
 
